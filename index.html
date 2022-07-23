@@ -1,75 +1,87 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="UTF-8">
-  <title>Alexander CV</title>
+    <meta charset="UTF-8">
+    <title>Alexander CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <table cellspacing="15">
-    <tr>
-      <td>
-        <img src="alexander.jpg" width="200" alt="Фото Александра">
-      </td>
-      <td>
-        <h1>Александр Бойков</h1>
-        <p><em>Я студент <strong>Яндекс.Практикум</strong></em></p>
-        <p>Я хочу научиться backend разработке</p>
-      </td>
-    </tr>
-  </table>
-  <hr>
-  <h2>Мои социальные сети</h2>
-  <ul type="square">
-    <li><a href="https:github.com/Finegorko" target="_blank">GitHub</a></li>
-    <li><a href="https:instagram.com/Finegorko" target="_blank">Instagram</a></li>
-  </ul>
-  <hr>
-  <h2>Мои хобби</h2>
-  <ol>
-    <li>Программирование</li>
-    <li>Прогулки</li>
-  </ol>
-  <hr>
-  <h2>Образование</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Учебное учреждение</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody><tr>
-      <td>ИНСПО</td>
-      <td>Программист</td>
-      <td>2019 – 2022</td>
-    </tr>
-    <tr>
-      <td>Яндекс.Практикум</td>
-      <td>Python разработчик</td>
-      <td>2021 – наст. вр.</td>
-    </tr></tbody>
-  </table>
-  <hr>
-  <h2>Порфтолио</h2>
-  <a href="portfolio.html">Посмотреть проекты</a>
-  <hr>
-  <h2>Связаться со мной</h2>
-
-  <form action="">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="ФИО">
-    <br>
-
-    <label for="email">Ваш Email:</label>
-    <input type="text" id="email" placeholder="example@example.com">
-    <br>
-
-    <label for="text">Текст сообщения:</label>
-    <br>
-    <textarea id="text" rows="3" cols="30"></textarea>
-    <br>
-
-    <input type="submit" value="Связаться">
-  </form>
+    <div class="container">
+        <div class="info">
+            <img src="/alexander.jpg" alt="Фото Александра" class="avatar">
+            <div class="info-text">
+                <h1>Александр Бойков</h1>
+                <p>
+                    Я студент <strong>Яндекс.Практикум</strong>
+                </p>
+                <p>Я хочу научиться backend разработке</p>
+            </div>
+        </div>
+        <div class="social">
+            <h2>Мои социальные сети</h2>
+            <a href="https:github.com/Finegorko" target="_blank">GitHub</a>
+            |
+            <a href="https:instagram.com/Finegorko" target="_blank">Instagram</a>
+        </div>
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Программирование</li>
+                <li>Видеоигры</li>
+                <li>Прогулки</li>
+            </ol>
+        </div>
+        <div class="card bg-red">
+            <h2>Образование</h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>ИНСПО</td>
+                        <td>Программист</td>
+                        <td>2019 – 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Яндекс.Практикум</td>
+                        <td>Python разработчик</td>
+                        <td>2021 – наст. вр.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card bg-green">
+            <h2>Порфтолио</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="">Yatube</a>
+                </li>
+                <li>
+                    <a href="">Фитнес-трекер</a>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="ФИО">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="text" id="email" placeholder="example@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Текст сообщения:</label>
+                    <textarea id="text" rows="3" cols="30"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+            <div class="position">
+                <div class="box"></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
