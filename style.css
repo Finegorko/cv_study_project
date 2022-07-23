@@ -144,12 +144,12 @@ a:active {
     margin-bottom: 20px;
 }
 
-.row > .form-group {
+.row>.form-group {
     width: 50%;
     margin-right: 20px;
 }
 
-.row > .form-group:last-child {
+.row>.form-group:last-child {
     margin-right: 0;
 }
 
@@ -164,22 +164,3 @@ a:active {
 .btn:hover {
     opacity: 0.9;
 }
-
-/* .position {
-    position: relative;
-    border: 4px solid black;
-    margin-top: 40px;
-    padding: 20px;
-    height: 300px;
-}
-
-.box {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    /* top: 50px; */
-    /* width: 50px;
-    height: 50px;
-    background: lightcoral;
-} */ 
